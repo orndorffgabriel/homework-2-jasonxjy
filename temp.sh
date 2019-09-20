@@ -4,8 +4,10 @@
 
 echo what is the temperature you want to convert from F to C?
 
-Read F
+read F
 
-x='echo "($F-32)*5/9" | bc -l'
+x=$(echo "($F-32)*5/9" | bc -l)
+
+
 
 echo $x C
